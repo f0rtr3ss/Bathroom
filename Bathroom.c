@@ -1,6 +1,12 @@
 #include "Bathroom.h"
+#include "queue.h"
 
 int main(int argc, char** argv)
+{
+	
+}
+
+int AddStudent()
 {
 	
 }
