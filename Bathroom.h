@@ -1,7 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <sqlite.h>
 #include <errno.h>
+
+#define MAXTRIPS 5
+#define DBNAME ".bathroom.db"
+#define DBFLAGS SQLITE_OPEN_READWRITE | SQLITE_OPEN_CREATE
 
 struct personname {
 	char* first;
@@ -26,6 +31,10 @@ struct student {
 typedef struct student Student;
 typedef Student QueueEntry;
 
-int NewStudent(int, const char*, const char*);
+Initialize(sqlite3*, );
+Cleanup(sqlite3*
+int LoadStudent(Student*, int);
+int NewStudent(Student*, int, const char*, const char*);
 Name* NewName(int, int);
-
+int ReleaseName(Name**);
+int ReleaseStudent(Student**);
