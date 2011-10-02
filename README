@@ -1,0 +1,9 @@
+/* Bathroom.c
+ * Bathroom.h
+ * 
+ * This is a simple program to keep track of students going to the
+ * bathroom in class. Not really that useful, but good practice 
+ * and kind of hilarious. Uses a linked queue set up with a pool
+ * for used and unused nodes so as to avoid needlessly allocating
+ * deallocating, and reallocating said nodes. Good stuff!
+ *                                                                 */
